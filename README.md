@@ -1,14 +1,23 @@
 # DriverRiskometer
 
+Soha Glal and Ashraf Khalil
+
+suha.glal@gmail.com,ashraf.khalil@adu.ac.ae
+
+Abu Dhabi University
+
+This project was under the supervison of Dr. Ashraf Khalil
+
 ## 1.	Abstract
 Use of mobile devices while driving has been widely shown to pose a serious safety risk. Various approaches aim at reducing the risk or reducing and even banning the use of devices while driving. Some initiatives have focused on increasing drivers’ awareness of the risk. Along that vein, we present a mobile application that assesses drivers’ personal risk with regard to speeding and cell phone use and raises awareness. Based on data collected during each driving episode, the application categorizes the driver into one of seven ranks, from very safe to very risky, thereby providing drivers a clear understanding of risk associated with specific behaviors: key interaction, number and length of phone calls, and speeding. User studies demonstrated the capabilities of the application in highlighting risky behavior, promoting awareness, and motivating better driving behavior.
 
 ## 2.	Introduction 
 Road accidents are the number one killer in UAE. It is estimated that road accidents costs UAE a staggering Dh21bl a year [3]. Addressing road accidents is of strategic importance for UAE. Several studies have addressed the risk of using mobile phones while driving [1,2]. Virginia Tech Transportation Institute (VTTI) provides a clear picture of driver distraction and cell phone use under real world driving conditions [1]. In [1], it was shown that those who text while driving are 23 times more likely to crash or nearly crash than those who are not distracted. Comparatively, those who dial phone numbers are 2.8 times more likely to crash or nearly crash while those who talk on a cell phone are about 1.3 times as likely to crash.
+![Alt text](/img/Picture1.png?raw=true "Fig. 1 (a). Architecture of the Driver Riskometer software.	")
 
-Fig. 1 (a). Architecture of the Driver Riskometer software.	
+![Alt text](/img/Picture2.png?raw=true "Fig 1 (b). Risk status is “Ticking bomb” for level 7.")
 
-Fig 1 (b). Risk status is “Ticking bomb” for level 7.
+
 
 The main aim of the Driver Riskometer application is to provide personal risk assessment for drivers and make them aware of their speeding and cell phone usage behavior. This is in turn expected to provide users with clear measures by which to reduce their driving risk. Our application assesses risks by tracking three measures: driving speed, the phone calls made and received during driving, and keypad interaction such as texting and emailing while driving. By giving different weight for each measure depending on its risk, usage frequency or magnitude, Riskometer builds a model for the driver’s risk.
 
