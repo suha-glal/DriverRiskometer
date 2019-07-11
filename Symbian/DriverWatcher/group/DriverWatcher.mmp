@@ -1,0 +1,29 @@
+/*
+============================================================================
+ Name		: DriverWatcher.mmp
+ Author	  : suha
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for DriverWatcher.
+============================================================================
+*/
+
+TARGET		  DriverWatcher.exe
+TARGETTYPE	  exe
+UID			 0 0xE8840256
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  DriverWatcher.cpp
+
+LIBRARY		 euser.lib esock.lib insock.lib flogger.lib
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\data
+START RESOURCE ExampleAutoStart.rss
+	TARGET ExampleAutoStart.rsc
+	TARGETPATH \resource
+END

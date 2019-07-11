@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name		: Calllog.mmp
+ Author	    : suha
+ Copyright  : Your copyright notice
+ Description: This is the project specification file for Calllog.
+============================================================================
+*/
+
+TARGET		  Calllog.exe
+TARGETTYPE	  exe
+UID 0 0xE0B98BEE
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  Calllog.cpp LogReader.cpp CallLogHandler.cpp
+
+LIBRARY		 euser.lib logcli.lib avkon.lib eikcdlg.lib efsrv.lib esock.lib flogger.lib insock.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+CAPABILITY ReadUserData

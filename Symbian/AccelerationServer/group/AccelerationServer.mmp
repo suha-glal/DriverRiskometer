@@ -1,0 +1,24 @@
+/*
+============================================================================
+ Name		: AccelerationServer.mmp
+ Author	  : suha
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for AccelerationServer.
+============================================================================
+*/
+
+TARGET		  AccelerationServer.exe
+TARGETTYPE	  exe
+UID			 0 0xE45B287C
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  AccelerationServer.cpp Listener.cpp AccelometerReadings.cpp
+
+LIBRARY		 euser.lib RRSensorApi.lib esock.lib esocksvr.lib insock.lib flogger.lib efsrv.lib charconv.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif

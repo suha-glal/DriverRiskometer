@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name		: keys.mmp
+ Author	  : suha
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for keys.
+============================================================================
+*/
+
+TARGET		  keys.exe
+TARGETTYPE	  exe
+UID			 0 0xE6E74D37
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  keys.cpp CapturingKeys.cpp
+
+LIBRARY		 euser.lib esock.lib esocksvr.lib flogger.lib ws32.lib apgrfx.lib insock.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+CAPABILITY SwEvent
