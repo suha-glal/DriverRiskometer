@@ -8,6 +8,8 @@ Abu Dhabi University
 
 This project was under the supervison of Dr. Ashraf Khalil
 
+The application measures drivers’ distractions and promotes safe driving behaviour. Driver Riskometer exploits off-the-shelf, sensor-enabled mobile phones, requiring no additional hardware. It was developed using symbian C++ and J2ME.The tools used to develop it include Carbide C++ v2 , S60 SDK and NetBeans IDE.(November 2009 to March 2010). 
+
 ## 1.	Abstract
 Use of mobile devices while driving has been widely shown to pose a serious safety risk. Various approaches aim at reducing the risk or reducing and even banning the use of devices while driving. Some initiatives have focused on increasing drivers’ awareness of the risk. Along that vein, we present a mobile application that assesses drivers’ personal risk with regard to speeding and cell phone use and raises awareness. Based on data collected during each driving episode, the application categorizes the driver into one of seven ranks, from very safe to very risky, thereby providing drivers a clear understanding of risk associated with specific behaviors: key interaction, number and length of phone calls, and speeding. User studies demonstrated the capabilities of the application in highlighting risky behavior, promoting awareness, and motivating better driving behavior.
 
